@@ -8,7 +8,7 @@ to demonstrate integration with BrowserStack and parallel testing.
 ## Usage
 
 - Clone the repository.
-- Make sure your env variables are set `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESSKEY`
+- Make sure your env variables are set `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESS_KEY`
 - To run iOS tests on BrowserStack: `npm run ios`
 - To run android tests on BrowserStack: `npm run android`
 
