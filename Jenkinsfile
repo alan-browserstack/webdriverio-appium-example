@@ -7,6 +7,12 @@ pipeline {
     }
 
     stages {
+        stage('Install dependencies') {
+            steps {
+                sh 'npm install --save-dev @wdio/cli'
+                sh 'npm install --save-dev wdio'
+            }
+        }
 
         stage('Test - iOS') {
             steps {
