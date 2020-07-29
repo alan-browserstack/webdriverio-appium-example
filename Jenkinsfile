@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
+                sh 'npm install --save-dev webdriverio'
                 sh 'npm install --save-dev @wdio/cli'
-                sh 'npm install --save-dev wdio'
             }
         }
 
