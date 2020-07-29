@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                echo '$BROWSERSTACK_USERNAME_BS'
-                echo '$BROWSERSTACK_ACCESS_KEY_BS'
+                echo $BROWSERSTACK_USERNAME_BS
+                echo $BROWSERSTACK_ACCESS_KEY_BS
             }
         }
 
