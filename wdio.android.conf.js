@@ -1,6 +1,6 @@
 exports.config = {
-  user: process.env.BROWSERSTACK_USERNAME_BS,
-  key: process.env.BROWSERSTACK_ACCESS_KEY_BS,
+  user: process.env.BROWSERSTACK_USERNAME,
+  key: process.env.BROWSERSTACK_ACCESS_KEY,
 
   capabilities: [
     {
