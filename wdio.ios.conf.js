@@ -175,8 +175,10 @@ exports.config = {
    * @param {Array.<Object>} capabilities list of capabilities details
    * @param {Array.<String>} specs List of spec file paths that are to be run
    */
-  // beforeSession: function (config, capabilities, specs) {
-  // },
+  beforeSession: function (config, capabilities, specs) {
+    console.log("USERNAME: " + process.env.BROWSERSTACK_USERNAME_BS);
+    console.log("ACCESS KEY: " + process.env.BROWSERSTACK_ACCESS_KEY_BS);
+  },
   /**
    * Gets executed before test execution begins. At this point you can access to all global
    * variables like `browser`. It is the perfect place to define custom commands.
@@ -196,8 +198,10 @@ exports.config = {
    * Hook that gets executed before the suite starts
    * @param {Object} suite suite details
    */
-  // beforeSuite: function (suite) {
-  // },
+  beforeSuite: function (suite) {
+    console.log("USERNAME: " + process.env.BROWSERSTACK_USERNAME_BS);
+    console.log("ACCESS KEY: " + process.env.BROWSERSTACK_ACCESS_KEY_BS);
+  },
   /**
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
