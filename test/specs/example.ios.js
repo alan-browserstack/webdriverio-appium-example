@@ -6,5 +6,9 @@ describe("iOS App Alert Button", function () {
     var alertButton = $(`-ios predicate string:${alertButtonSelector}`);
     alertButton.waitForDisplayed({ timeout: 3000 });
     alertButton.click();
+
+    var alertBodyTextSelector = `type == 'XCUIElementTypeStaticText' && name CONTAINS 'This is a native alert.'`;
+    var alertBodyText = $(`-ios predicate string:${alertBodyTextSelector}`);
+    alertBodyText.waitForDisplayed({ timeout: 3000 });
   });
 });
